@@ -15,6 +15,11 @@ body{
   
     
 }
+.separator{
+    border-top: 1px solid #DDDDDD;
+    margin: 70px auto 55px;
+    max-width: 40%;
+}
 #cursor{
     position: fixed;
     box-sizing: border-box;
@@ -68,8 +73,8 @@ body{
     height: auto;
 }
 .right{
-    width: 60%;
-    height: calc(100vh - 80px);
+    width: 100%;
+    height: auto;
     display: flex;
     
 }
@@ -84,14 +89,14 @@ body{
 
 }
 .text{
-    width: 70%;
+    width: 100%;
     height: calc(100vh - 80px);
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
 .text-alt{
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
     font-family: 'Source Sans Pro', sans-serif;
@@ -139,10 +144,9 @@ body{
     transform: scaleY(1);
 }
 .nav{
-    width: 30%;
+    width: auto;
     display: flex;
-    align-items: center;
-    justify-content: end;
+    margin:0 40px 0 0
 }
 .nav-alt{
     width: auto;
@@ -150,6 +154,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 1700;
+    
+
+
 }
 
 .nav-alt-alt ol{
@@ -172,6 +181,277 @@ body{
 }
 .nav-alt-alt ol li a:hover{
     background-color:#FFB400;
+}
+/*about*/
+.title-top{
+    position: relative;
+    width: 100%;
+    margin: 100px 0 0 0;
+
+    height: 100px;
+
+}
+.one-title{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.one-title h1{
+    position: absolute;
+    z-index: 2;
+    font-weight:900;
+    margin:30px 0 0 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 70px;
+
+}
+.one-title span{
+    color: #FFB912;
+}
+.two-title{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-family: Poppins,sans-serif;
+    font-weight: bold;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.two-title h1{
+    position: absolute;
+    font-size: 150px;
+    z-index: 1;
+    font-weight:900;
+    font-family: 'Kanit', sans-serif;
+
+
+}
+
+
+.container{
+    position:relative;
+    display: flex;
+    
+
+}
+.about{
+    display: flex;
+    font-weight:bold;
+    flex-wrap: wrap;
+    
+}
+.personel-title{
+    margin: 0 0 25px 0;
+}
+.flex{
+margin:0 60px 0 0
+}
+.personel{
+    width: 50%;
+    height: auto;
+    flex-wrap: wrap;
+
+}
+.personel-title h3{
+    font-weight:700;
+}
+.flex span{
+    color: #FEFEFE;
+}
+.flex p{
+    color:gray
+    ;
+}
+.icon{
+    margin:0 0 0 10px;
+    color: #FEFEFE;
+    background-color: #FFB400;
+    color: #DDDDDD;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+}
+
+
+.kutu{
+    border:1px solid #252525;
+    height: 150px;
+    padding: 20px;
+    width: 150px;
+    margin: 20px;
+    border-radius: 7px;
+    line-height:2;
+    
+
+
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.kutu h1{
+    color: #FFB400;
+    font-weight: bold;
+}
+.card-header h2{
+    font-weight: 700;
+}
+.auto span{
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border:10px solid #FFB400;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.ortala{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+    
+}
+.percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.percent svg circle{ 
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #252525;
+    transform: translate(5px,5px);
+}
+.percent svg circle:nth-child(2){
+    stroke:var(--clr) ;
+    stroke-dasharray: 440;
+    stroke-dashoffset:calc(440 - (440 * var(--num))/100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.number{
+    position:absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+.number h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size:1.5em;
+
+
+}
+.number p{
+    font-weight: 300;
+    color: #fff;
+    font-size:0.7em;
+    letter-spacing:2px ;
+    text-transform: uppercase;
+    color:rgba(255 255 255 0 75) ;
+   
+
+}
+
+/*EXPERİENCE*/
+
+.experience{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.experience-alt{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.experience-alt-float{
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+}
+.icerik{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.icerik-left{
+    height: 160px;
+    display: block;
+    margin: 0 10px 0 0;
+
+}
+.icerik-left .altcizgi{
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.icerik-left i{
+    padding: 10px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #FFB400;
+    font-size: 20px;
+}
+.icerik-right{
+    height: auto;
+    display: block;
+}
+.icerik-right span{
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 10px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #252525;
+    opacity: .8;
+}
+.icerik-right h4{
+    font-size: 17px;
+    font-weight: 600;
+}
+.icerik-right b{
+    font-weight: 400;
 }
 
 @media screen and (max-width:1000px){
