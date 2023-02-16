@@ -3,7 +3,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+::selection {
+    background:#FFB400;
+    color:#fff;
+}
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #111111;
@@ -12,7 +15,6 @@ body{
   
     
 }
-
 .separator{
     border-top: 1px solid #DDDDDD;
     margin: 70px auto 55px;
@@ -36,7 +38,6 @@ body{
     justify-content: center;
     background-color: transparent;
     background-color: #f2d79a;
-    box-sizing: border-box;
 
     
 }
@@ -55,11 +56,10 @@ body{
 }
 .contents{
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: absolute;
     z-index: 2;
     padding: 20px;
-    box-sizing: border-box;
 
 }
 .contents-alt{
@@ -143,6 +143,11 @@ body{
 .btn-1:hover::before{
     transform: scaleY(1);
 }
+.btn-1 i{
+    color: white;
+    font-size: 20px;
+    margin:0 0 0 20px;
+}
 .nav{
     width: auto;
     display: flex;
@@ -160,6 +165,7 @@ body{
 
 
 }
+
 .nav-alt-alt ol{
     margin: 0;
     padding: 0;
@@ -246,19 +252,23 @@ body{
     display: flex;
     font-weight:bold;
     flex-wrap: wrap;
-    width: 100%;
+background-color: red;
+    width: 50%;
     
 }
 .personel-title{
     margin: 0 0 25px 0;
 }
 .flex{
-margin:0 60px 0 0
+margin:0 0px 0 0;
+width: 100%;
+
 }
 .personel{
     width: 50%;
     height: auto;
-    flex-wrap: wrap;
+    background-color: blue;
+    flex-wrap:nowrap;
 
 }
 .personel-title h3{
@@ -292,6 +302,7 @@ margin:0 60px 0 0
     margin: 20px;
     border-radius: 7px;
     line-height:2;
+    background-color: red;
     
 
 
@@ -299,6 +310,8 @@ margin:0 60px 0 0
 .row{
     display: flex;
     align-items: center;
+    background-color: red;
+    width: 100%;
 }
 
 .kutu h1{
@@ -456,8 +469,131 @@ margin:0 60px 0 0
 .icerik-right b{
     font-weight: 400;
 }
+.container-contact{
+    width: 65%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.communication-icons .iconbackground{
+    color: #111111;
+    background-color: #FFB400;
+    padding: 6px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.contact-text{
+    width: 35%;
+    height: 200px;
+    position: relative;
 
 
+}
+.contact-text h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.contact-form{
+    width: 65%;
+    height: 200px;
+    position: relative;
+
+}
+.contact-column{
+    width: 100%;
+    height: auto;
+    padding: 0 50px 0 0;
+    display: block;
+}
+.contact-explanation{
+    font-size: 15px;
+    line-height:1.6;
+}
+.contact-communication{
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+    display: flex;
+}
+.communication-icons{
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+
+}
+.communication-icons i{
+    font-size:40px;
+    color:#FFB400;
+}
+.communication-explanation{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.communication-explanation h6{
+    color: gray;
+    font-weight:600;
+    font-size: 15px;
+}
+.communication-explanation p{
+    font-weight:600;
+    font-size: 15px;
+}
+
+.form-input{
+    width: 100%;
+    height: 50px;
+    background-color: #252525;
+    border:none;
+    border:none;
+    border-radius: 25px;
+    margin:20px 0 20px 0 ; 
+    color:white;
+    font-weight:600;
+    
+    padding: 0 0 0 20px;
+}
+.form-input::placeholder{
+    font-weight: 100;
+}
+.form-input:focus{
+   outline: 0;
+   border: 1px solid #FFB400;
+}
+.textarea{
+    height: 200px;
+    padding: 20px;
+}
+.sosyalicons{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    
+}
+.sosyalicons i{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    background-color: #2B2A2A;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sosyalicons i:hover{
+    background-color: #FFB400;
+}
+@media screen and (max-width:1600px){
+    .container-contact{
+        width: 80%;
+
+    }
+}
 @media screen and (max-width:1400px){
     .personel{
         width: 60%;
@@ -475,59 +611,58 @@ margin:0 60px 0 0
         
     }
 }
+@media screen and (max-width:1229px) {
+    .contact-communication{
+        width: 100%;
+        height: auto;
+        margin-top:10px;
+
+    }
+    .contact-column{
+
+        padding: 0 20px 0 0;
+
+    }
+    
+}
 @media screen and (max-width:1200px){
     .deneme{
         padding: 0px 50px;
     }
+    .container-contact{
+        width: 100%;
 
     }
+    .contact-text{
+        width: 100%;
+        height: auto;
+        order: 1;
+        margin:20px 0 0 0
+    }
     
+    .contact-form{
+        width: 100%;
+        height: auto;
+        order: 2;
 
-
-
+    }
+    .container-contact{
+        display: block;
+    }
+    
+    }
 
 @media screen and (max-width:1000px){
+    .contact-form{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 55px;
+
+    }
     .yellow{
         width: 0%;
     }
-    .container{
-        width: 100%;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-
-    }
-    .personel{
-        width: 100%;
-        height: auto;
-        flex-wrap: none;
-        text-align: left;
-    
-    }
-     .deneme{
-        padding:0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: auto;
-        padding: 0px;
-        margin: 0px;
-    }
-    .flex{
-        width: 50%;
-
-    }
-    .genelbilgi{
-        width: 100%;
-    }
-    .about{
-        display: flex;
-        font-weight:bold;
-        flex-wrap:nowrap;
-        
-    }
-
     .contents-alt{
         padding: 0px;
     }
@@ -536,69 +671,6 @@ margin:0 60px 0 0
         height: 100vh;
         position: absolute;
         z-index: 2;
-        padding: 0px;
-
-    }
-    
-
- 
-    .left{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .img{
-        width: 270px;
-        height: 270px;
-        border-radius: 50%;
-        box-shadow: 0 0 7px rgb(0 0 0 / 90%);
-        border:2px solid rgb(58, 58, 58)
-    
-    }
-    .right{
-        width: 100%;
-        height: auto;
-        display: block;
-    
-    }
-    .text{
-        width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top:50px;
-    }
-    .text{
-        width: 100%;
-        height: calc(100vh - 80px);
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-    .text-alt{
-        width: 100%;
-        height: auto;
-        display: block;
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-    }
-    .altyazi{
-        width: 100%;
-        margin-top:30px;
-        text-align: center;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    .button{
-        margin:20px 0 0 0;
-    }
-    .contents{
-        width: 100%;
-        position: absolute;
         padding: 0px;
 
     }
@@ -619,19 +691,23 @@ margin:0 60px 0 0
     .container-contact{
         padding: 20px;
      }
-     .nav-alt{
+
+    .nav-alt{
         width: 100%;
         display:block;
         height: auto;
         margin: 0px;
+
+    
     }
     .nav-alt-alt ol{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-        margin: 0px;
-        }
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    }
+
     .nav-alt-alt ol li a{
         color: #DDDDDD;
         background-color: #2B2A2A;
@@ -646,24 +722,28 @@ margin:0 60px 0 0
       
        
     }
-        .experience-alt{
-        width: 100%;
-        margin: auto;
-        min-height: 200px;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 0 70px 0;
-    }
-    .experience-alt-float{
-        width: 100%;
-        border-bottom: 1px solid #DDDDDD;
-        text-align: left;
-
-    }
- 
+    
 
 }
 @media screen and (max-width:700px){
+    
+    .contact-text{
+        width: 100%;
+        height: auto;
+        order: 1;
+        margin:20px 0 0 0
+    }
+    
+    .contact-form{
+        width: 100%;
+        height: auto;
+        order: 2;
+
+    }
+    .container-contact{
+       padding: 20px;
+    }
+    
     .buyuk-baslik{
         font-size:24px
     }
@@ -675,18 +755,9 @@ margin:0 60px 0 0
         height: 100vh;
         display: block;
         padding: 0px;
-        margin:10px 0 0 0
-
-    }
-    .deneme{
-        padding:0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: auto;
+        margin:10px 0 0 0;
         padding: 0px;
-        margin: 0px;
+
     }
 
     .button{
@@ -772,51 +843,42 @@ margin:0 60px 0 0
 @media screen and (max-width:460px){
     .button{
         margin:5px 0 0 0;
-        
     }
-
     .img{
         width: 250px;
         height: 250px;
         border-radius: 50%;
         box-shadow: 0 0 7px rgb(0 0 0 / 90%);
-        border:2px solid rgb(58, 58, 58);
+        border:2px solid rgb(58, 58, 58)
     
     }
-   
     .altyazi{
         width: 100%;
         margin-top:30px;
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
-        
     }
      
     .one-title h1{
   
         font-size: 35px;
-        
     
     }
     .one-title{
 
         justify-content:flex-start;
-        margin: 0 0 0 0px;
-        
+        margin: 0 0 0 20px;
     
     }
     .flex p span{
         font-size: 14px;
-        
     }
     .flex p {
         font-size: 14px;
-        
     }
     .text-center{
         font-size: 20px;
     }
-
     
 }
