@@ -572,6 +572,10 @@ width: 100%;
     padding-top: 20px;
     
 }
+.sosyalicons a{
+    color: #DDDDDD;
+    text-decoration: none;
+}
 .sosyalicons i{
     width: 20px;
     height: 20px;
@@ -836,6 +840,7 @@ width: 100%;
         height: 0px;
     }
     
+    
 }
     
 
@@ -843,6 +848,25 @@ width: 100%;
 @media screen and (max-width:460px){
     .button{
         margin:5px 0 0 0;
+    }
+    .contact-communication{
+        width: 100%;
+        height: auto;
+        margin-top:20px;
+        display: flex;
+    }
+    #cursor{
+
+        display: none;
+
+        
+    }
+    .contact-form{
+    margin-top: 20px;
+    
+    }
+    .communication-explanation p{
+      -webkit-text-fill-color: white;
     }
     .img{
         width: 250px;

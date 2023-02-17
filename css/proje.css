@@ -7,6 +7,10 @@
     background:#FFB400;
     color:#fff;
 }
+.bosluk{
+    height: 70px;
+    width: 100%;
+}
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #111111;
@@ -640,6 +644,7 @@ a{
     }
     .container-contact{
         width: 100%;
+        margin: 0;
       
     }
 }
@@ -684,7 +689,7 @@ a{
     .title-top{
         position: relative;
         width: 100%;
-        margin: 20px 0 0 0;
+        margin: 0px 0 0 0;
     
         height: 80px;
     
@@ -743,6 +748,12 @@ a{
         margin: 0px;
         height: 0px;
     }
+    .title-top {
+        position: relative;
+        width: 100%;
+        margin: 20px 0 0 0;
+        height: 80px;
+    }
     
     
 }
@@ -752,6 +763,23 @@ a{
 @media screen and (max-width:460px){
     .button{
         margin:5px 0 0 0;
+    }
+    #cursor{
+
+        display: none;
+
+        
+    }
+    .title-top{
+        position: relative;
+        width: 100%;
+        margin: 20px 0 0 0;
+    
+        height: 50px;
+    
+    }
+    .container-contact{
+        padding: 10px;
     }
     .contact-icerik{
         width: 100%;    
@@ -763,6 +791,7 @@ a{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        margin: 0px;
         justify-content: center;
         
     
